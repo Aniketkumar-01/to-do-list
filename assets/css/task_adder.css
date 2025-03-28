@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+#container {
+  height: 66vh;
+  max-height: 500px;
+  width: 80vw;
+  max-width: 600px;
+  border: 2px solid #D1D5DB;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  background-color: #F9FAFB;
+  color: #333333;
+}
+
+#header_container {
+  height: 9vh;
+  max-height: 70px;
+  display: flex;
+  padding: 0 30px 0 30px;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: underline;
+  text-decoration-color: #E35A24;
+  font-weight: bold;
+}
+
+#header_container a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#main_container {
+  height: 48vh;
+  max-height: 360px;
+  border: 1px solid #D1D5DB;
+  display: flex;
+  flex-direction: column;
+  /* gap: 3px; */
+  padding: 10px;
+  border-left: none;
+  border-right: none;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#tt {
+  display: flex;
+  padding: 5px 0 5px 0;
+  gap: 10px;
+}
+
+#task_title {
+  width: 60%;
+}
+
+#td {
+  display: flex;
+  padding: 5px 0 5px 0;
+  gap: 10px;
+}
+
+#task_date {
+  width: 30%;
+}
+
+#tp {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px 0 5px 0;
+}
+
+fieldset {
+  padding: 10px;
+  width: 60%;
+  border: 0;
+}
+
+#tp div {
+  display: flex;
+  gap: 10px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+textarea {
+  border-radius: 10px;
+}
+
+#mid_part {
+  height: 135px;
+  width: 100%;
+  display: flex;
+  padding-top: 10px;
+  justify-content: center;
+}
+
+#left label {
+  display: block;
+}
+
+#mid_part textarea {
+  resize: none;
+  width: 90%;
+  height: 100px;
+}
+
+#right {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#tr {
+  /* display: flex; */
+  padding: 5px 0 5px 0;
+  gap: 10px;
+}
+
+#tr textarea {
+  display: block;
+  height: 100%;
+  width: 80%;
+  resize: none;
+}
+
+#foot_container {
+  height: 9vh;
+  max-height: 70px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0 30px 0 0;
+  align-items: center;
+}
+
+#foot_container button {
+  color: #ffffff;
+  background-color: #FF6B35;
+  height: 50%;
+  width: 30%;
+  border-radius: 10px;
+  border: none;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/task_adder.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <div id="header_container">
+          <p>Edit Task</p>
+          <a href="/index.html">Go Back</a>
+        </div>
+      </header>
+      <main>
+        <div id="main_container">
+          <div id="tt">
+            <label for="task_title">Title:</label>
+            <input
+              type="text"
+              id="task_title"
+              placeholder="Briefly describe the task"
+            />
+          </div>
+
+          <div id="td">
+            <label for="task_date">Date:</label>
+            <input type="date" id="task_date" placeholder="DD-MM-YYYY" />
+          </div>
+
+          <span>Priority:</span>
+          <div id="tp">
+            <div id="extreme">
+              <input
+                type="radio"
+                name="task_priority"
+                id="extreme_priority"
+                value="Extreme"
+              />
+              <label for="extreme_priority">
+                <span class="dot_red"></span>
+                Extreme</label
+              >
+            </div>
+            <div id="moderate">
+              <input
+                type="radio"
+                name="task_priority"
+                id="moderate_priority"
+                value="Moderate"
+              />
+              <label for="moderate_priority">
+                <span class="dot_blue"></span>Moderate</label
+              >
+            </div>
+            <div id="low">
+              <input
+                type="radio"
+                name="task_priority"
+                id="low_priority"
+                value="low"
+              />
+              <label for="low_priority">
+                <span class="dot_green"></span>Low</label
+              >
+            </div>
+          </div>
+          <div id="mid_part">
+            <div id="left">
+              <label for="task_description">Task Description:</label>
+              <textarea
+                id="task_description"
+                rows="10"
+                cols="40"
+                placeholder="Provide details about the task..."
+              ></textarea>
+            </div>
+            <div id="right">
+              <div id="ti">
+                <label for="task_image">Upload Image</label>
+                <input type="file" id="task_image" multiple />
+              </div>
+              <div id="tf">
+                <label for="task_file">Upload Files</label>
+                <input type="file" id="task_file" />
+              </div>
+            </div>
+          </div>
+          <div id="tr">
+            <label for="task_references">Reference Links (If any):</label>
+            <textarea
+              id="task_references"
+              placeholder="Paste useful links related to this task...."
+            ></textarea>
+          </div>
+          <div></div>
+        </div>
+      </main>
+      <footer>
+        <div id="foot_container">
+          <button type="submit">Done</button>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
